@@ -45,7 +45,7 @@ def main():
         price = get_latest_bitcoin_price()
         date = datetime.now()
         bitcoin_history.append({'date': date, 'price': price})
-        time.sleep(6)
+        
 
         # Send an emergency notification
         if price > BITCOIN_PRICE_THRESHOLD:
@@ -60,9 +60,9 @@ def main():
             # Reset the history
             bitcoin_history = []
             print("HISTORY RESETTTED!!!")
-            time.sleep(9)
+            
 
-        time.sleep(9)
+        
 
 
 if __name__ == '__main__':
